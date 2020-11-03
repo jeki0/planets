@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Planets</title>
+</head>
+<body style="margin: 0; padding: 0; overflow: hidden;">
+   
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div class="headPanel">
+        <img src="img/connect.svg" class="imgButton" onclick="UIaddConnection();">
+        <img src="img/add.png" class="imgButton" onclick="UIaddPlanet();">
+        <img src="img/delete.png" class="imgButton" onclick="UIdeletePlanet();">
+        <img src="img/buy.svg" class="imgButton" onclick="UIbuyPlanet();">
+    </div>
+    
+    <div class="leftPanel" id="leftPanel" style="display: none;">
+        <div class="leftPanelHead">Свойства планеты</div>
+        <div class="leftPanelContent"></div>
+    </div>
+    
+    <style>
+        .headPanel{position: fixed; top:0px; left: 0px; width: 100%; height: 50px;  background: #141E30; background: -webkit-linear-gradient(to right, #243B55, #141E30); background: linear-gradient(to right, #243B55, #141E30); }
+        
+        .headPanel{
+            background: #e52d27;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        
+        .imgButton {height: 30px; margin: 5px; padding: 5px; cursor: pointer;}
+        .imgButton:hover {background: #80070d; border-radius: 5px;}
+        
+        .leftPanel {position: fixed; left: 20px; top: 100px; width: 300px; height: 500px; border-radius: 0 0 10px 10px; background: #fff; -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);}
+        .leftPanelHead { background: linear-gradient(to right, #b31217, #e52d27); padding: 10px; color: #fff; font-size: 22px; }
+    </style>
+   
+   <script src="script.js"></script>
+    
+</body>
+</html>
